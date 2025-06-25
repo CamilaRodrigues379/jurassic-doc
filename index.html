@@ -1,71 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jurassic Doc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🦕 Jurassic Doc 🌱</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Jurassic Doc" class="logo" />
-    <h1>Camila Rodrigues Ribeiro</h1>
+    <img src="4fd1177ab8cefff062660ba1771e259d.jpg" alt="" class="logo">
+    <h1>Jurassic Doc</h1>
     <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contato">Contato</a>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section id="sobre">
-      <h2>Sobre o Documentário</h2>
-      <p>Explore o mundo dos dinossauros em um estilo de documentário divertido, informativo e direto ao ponto!</p>
+      <h2>🎥 Um documentário jurássico</h2>
+      <p>Bem-vindo ao Jurassic Doc! Aqui você vai conhecer os dinossauros mais famosos da franquia Jurassic Park de forma simples e divertida.</p>
+      <ul>
+        <li><strong>Velociraptor:</strong>Ágil e muito inteligente. Trabalha em grupo para caçar.</li>
+        <li><strong>T-rex:</strong>Um predador gigante com dentes afiados e rugido imponente.</li>
+        <li><strong>Tricerátops:</strong> Herbívoro com três chifres e uma aparência imponente.</li>
+        <li><strong>Brachiossauro:</strong> Enorme e pacífico, se alimenta do topo das árvores.</li>
+        <li><strong>Espinossauro:</strong> Um dos poucos que nadava! Forte, rápido e assustador.</li>
+      </ul>
     </section>
 
     <section id="galeria">
-      <h2>Galeria de Dinossauros</h2>
-      <table>
+      <h2>🦖 Galeria</h2>
+      <table border="1">
         <tr>
-          <th>Nome</th>
+          <th>Espécie</th>
           <th>Imagem</th>
         </tr>
         <tr>
-          <td>Tyrannosaurus Rex</td>
-          <td><img src="jurassic-world-tyrannosaurus-rex-1.jpg" alt="T-Rex"></td>
+          <td>Velociraptor</td>
+          <td><img src="jurassic-world-social.avif" width="100"></td>
         </tr>
         <tr>
-          <td>Brachiosaurus</td>
-          <td><img src="jurassic_park_chaos__brachiosaurus.jpg" alt="Brachiosaurus"></td>
+          <td>T-Rex</td>
+          <td><img src="jurassic-world-tyrannosaurus-rex-1-by-jd1680a-d9cwer6_hvag.1200.webp" width="100"></td>
         </tr>
         <tr>
-          <td>Spinosaurus</td>
-          <td><img src="PhotoSpinosaurus.jpg" alt="Spinosaurus"></td>
-        </tr>
+    <td>Tricerátops</td>
+    <td><img src="Jurassic_World_Evolution_Screenshot_2020.01.03_-_18.26.00.99.webp" width="100"></td>
+  </tr>
+  <tr>
+    <td>Brachiossauro</td>
+    <td><img src="jurassic_park__chaos___brachiosaurus_by_sideswipe217_dewov2n-pre.jpg" width="100"></td>
+  </tr>
+  <tr>
+    <td>Espinossauro</td>
+    <td><img src="PhotoSpinosaurus.jpg.webp" width="100"></td>
+  </tr>
       </table>
     </section>
 
     <section id="contato">
-      <h2>Contato</h2>
-      <form id="formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <button type="submit">Enviar Mensagem</button>
+      <h2>📬 Contato</h2>
+      <form onsubmit="enviarMensagem(event)">
+        <label>Nome: <input type="text" required></label><br><br>
+        <label>Email: <input type="email" required></label><br><br>
+        <input type="submit" value="Enviar Mensagem 📮" onclick="rugido()">
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Jurassic Doc © 2025</p>
+    <p>👣 Visitantes nesta página: <span id="contador">0</span></p>
+    <p>Jurassic Doc - Página criada por Camila Rodrigues Ribeiro 🧬</p>
   </footer>
 
-  <audio id="somRaptor" src="velociraptor-call-mp3cut.mp3"></audio>
+  <audio id="som-rugido" src="velociraptor-call-mp3cut.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
