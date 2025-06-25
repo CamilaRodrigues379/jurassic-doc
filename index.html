@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurassic Doc</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Jurassic Doc" class="logo" />
+    <h1>Camila Rodrigues Ribeiro</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Documentário</h2>
+      <p>Explore o mundo dos dinossauros em um estilo de documentário divertido, informativo e direto ao ponto!</p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Dinossauros</h2>
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Imagem</th>
+        </tr>
+        <tr>
+          <td>Tyrannosaurus Rex</td>
+          <td><img src="jurassic-world-tyrannosaurus-rex-1.jpg" alt="T-Rex"></td>
+        </tr>
+        <tr>
+          <td>Brachiosaurus</td>
+          <td><img src="jurassic_park_chaos__brachiosaurus.jpg" alt="Brachiosaurus"></td>
+        </tr>
+        <tr>
+          <td>Spinosaurus</td>
+          <td><img src="PhotoSpinosaurus.jpg" alt="Spinosaurus"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jurassic Doc © 2025</p>
+  </footer>
+
+  <audio id="somRaptor" src="velociraptor-call-mp3cut.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
